@@ -8,13 +8,18 @@ body {
   color: #4c6986;
 }
 
+.title{
+  max-width: 500px;
+}
+
 .wrapper {
   max-width: 144opx;
   height: 800px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 40px;
 }
 
 h1{
@@ -120,4 +125,14 @@ background-color: #eee;
 
 .tile-winner span{
   color: #23CE6B;
+}
+
+@media only screen and (max-width:1200px) {
+  .wrapper{
+    flex-direction: column;
+  }
+  
+  .left{
+    padding-bottom: 50px;
+  }  
 }

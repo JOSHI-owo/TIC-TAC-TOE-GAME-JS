@@ -8,6 +8,8 @@ export default class GameView {
     for (let i = 0; i < game.board.length; i++) {
       const tile = document.querySelector(`.board-tile[data-index='${i}']`);
 
+      tile.classList.remove("tile-winner");
+
       let tileType = game.board[i] == "X" ? "tile-x" : "tile-o";
 
       tile.innerHTML = `<span class="${tileType}"> ${
