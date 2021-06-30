@@ -13,7 +13,7 @@ body {
 }
 
 .wrapper {
-  max-width: 144opx;
+  max-width: 1440px;
   height: 800px;
   display: flex;
   justify-content: space-between;
@@ -135,4 +135,10 @@ background-color: #eee;
   .left{
     padding-bottom: 50px;
   }  
+}
+
+.winner{
+  padding-left: 25px;
+  color: rgba(43, 226, 186, 0.59);
+
 }

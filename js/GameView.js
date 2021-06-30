@@ -7,6 +7,7 @@ export default class GameView {
     console.log(game.board);
     for (let i = 0; i < game.board.length; i++) {
       const tile = document.querySelector(`.board-tile[data-index='${i}']`);
+      const winner = document.querySelector(".winner");
 
       tile.classList.remove("tile-winner");
 
@@ -18,6 +19,9 @@ export default class GameView {
 
       if (winningCombination && winningCombination.includes(i)) {
         tile.classList.add("tile-winner");
+        winner.innerHTML = `<h1>winner is ${game.board[i]}</h1>`;
+      } else {
+        winner.innerHTML = `<h1></h1>`;
       }
     }
   }
